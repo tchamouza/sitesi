@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Seconnecter.css">
+    <title>Connexion - Site Securite informatique</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Acceuil.html">Accueil</a>
+            <a href="Seconnecter.html">Se connecter</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="../php/Reclamation.php">Requêtes &amp Plaintes</a>
+        </nav>
+    </header>
+    <section class="connect">
+        <div class="presentation">
+            <h1>Bienvenue</h1>
+            <p>Votre compte a été créé avec succès</p>
+            <p>Veuillez vous connecter pour accéder à votre compte.</p>
+        </div>
+        <div class="form-box">
+            <form action="../php/login.php" method="POST">
+                <legend class="legend-box">Connexion</legend>
+
+                <label for="username">Email :</label>
+                <input type="text" name="username" id="username" placeholder="Entrez votre email" required>
+
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="password" name="motdepasse" id="motdepasse" placeholder="Entrez votre mot de passe"
+                    minlength="6" required><br>
+
+                <button type="submit" aria-label="Se connecter">Connexion</button><br><br>
+
+                <p>Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

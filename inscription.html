@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/inscription.css">
+        <title>Inscription</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="Acceuil.html">Accueil</a>
+                <a href="Seconnecter.html">Se connecter</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="../php/Reclamation.php">Requêtes &amp Plaintes</a>
+            </nav>
+        </header>
+        <section class="connect">
+            <div class="form-box">
+                <form action="../php/traitement.php" method="post">
+                    <h1>Saisissez vos informations</h1>
+
+                    <label for="nom">Nom :</label>
+                    <input class="al" type="text" id="nom" name="nom"
+                        autocomplete="family-name"
+                        placeholder="Entrez votre Nom" required><br><br>
+
+                    <label for="prenom">Prénom :</label>
+                    <input class="al" type="text" id="prenom" name="prenom"
+                        autocomplete="given-name"
+                        placeholder="Entrez votre Prenom" required><br><br>
+
+                    <label for="age">Âge :</label>
+                    <input class="al" type="number" id="age" name="age" min="1"
+                        max="100" placeholder="Entrez votre Âge"
+                        required><br><br>
+
+                    <label for="sexe">Sexe :</label>
+                    <select class="al" id="sexe" name="genre" required>
+                        <option value disabled selected>Choisissez votre
+                            sexe</option>
+                        <option value="masculin">Masculin</option>
+                        <option value="feminin">Féminin</option>
+                        <option value="autre">Autre</option>
+                    </select><br><br>
+                    <label for="pays">Pays :</label>
+                    <select class="al" id="pays">
+                        <option value="+93">Afghanistan (+93)</option>
+                        <option value="+355"> Albanie (+355)</option>
+                        <option value="+213">Algérie (+213)</option>
+                        <option value="+376">Andorre (+376)</option>
+                        <option value="+244">Angola (+244)</option>
+                        <option value="+54">Argentine (+54)</option>
+                        <option value="+61">Australie (+61)</option>
+                        <option value="+43"> Autriche (+43)</option>
+                        <option value="+32">Belgique (+32)</option>
+                        <option value="+229"> Bénin (+229)</option>
+                        <option value="+226">Burkina Faso (+226)</option>
+                        <option value="+257">Burundi (+257)</option>
+                        <option value="+237">Cameroun (+237)</option>
+                        <option value="+1">Canada (+1)</option>
+                        <option value="+86">Chine (+86)</option>
+                        <option value="+225">Côte d'Ivoire (+225)</option>
+                        <option value="+20">Égypte (+20)</option>
+                        <option value="+33">France (+33)</option>
+                        <option value="+241">Gabon (+241)</option>
+                        <option value="+220">Gambie (+220)</option>
+                        <option value="+233">Ghana (+233)</option>
+                        <option value="+224">Guinée (+224)</option>
+                        <option value="+245">Guinée-Bissau (+245)</option>
+                        <option value="+509">Haïti (+509)</option>
+                        <option value="+91">Inde (+91)</option>
+                        <option value="+62">Indonésie (+62)</option>
+                        <option value="+39">Italie (+39)</option>
+                        <option value="+81">Japon (+81)</option>
+                        <option value="+962">Jordanie (+962)</option>
+                        <option value="+254">Kenya (+254)</option>
+                        <option value="+856">Laos (+856)</option>
+                        <option value="+218">Libye (+218)</option>
+                        <option value="+261"> Madagascar (+261)</option>
+                        <option value="+223"> Mali (+223)</option>
+                        <option value="+212"> Maroc (+212)</option>
+                        <option value="+222"> Mauritanie (+222)</option>
+                        <option value="+230"> Maurice (+230)</option>
+                        <option value="+52"> Mexique (+52)</option>
+                        <option value="+234"> Nigeria (+234)</option>
+                        <option value="+227"> Niger (+227)</option>
+                        <option value="+47"> Norvège (+47)</option>
+                        <option value="+92"> Pakistan (+92)</option>
+                        <option value="+507"> Panama (+507)</option>
+                        <option value="+595"> Paraguay (+595)</option>
+                        <option value="+51"> Pérou (+51)</option>
+                        <option value="+63"> Philippines (+63)</option>
+                        <option value="+351"> Portugal (+351)</option>
+                        <option value="+974"> Qatar (+974)</option>
+                        <option value="+242"> République du Congo
+                            (+242)</option>
+                        <option value="+250"> Rwanda (+250)</option>
+                        <option value="+221"> Sénégal (+221)</option>
+                        <option value="+232"> Sierra Leone (+232)</option>
+                        <option value="+27"> Afrique du Sud (+27)</option>
+                        <option value="+211"> Soudan du Sud (+211)</option>
+                        <option value="+34"> Espagne (+34)</option>
+                        <option value="+249"> Soudan (+249)</option>
+                        <option value="+46"> Suède (+46)</option>
+                        <option value="+41"> Suisse (+41)</option>
+                        <option value="+886"> Taïwan (+886)</option>
+                        <option value="+255"> Tanzanie (+255)</option>
+                        <option value="+228" selected> Togo (+228)</option>
+                        <option value="+216"> Tunisie (+216)</option>
+                        <option value="+90"> Turquie (+90)</option>
+                        <option value="+256"> Ouganda (+256)</option>
+                        <option value="+44"> Royaume-Uni (+44)</option>
+                        <option value="+1"> États-Unis (+1)</option>
+                        <option value="+58"> Venezuela (+58)</option>
+                        <option value="+84"> Viêt Nam (+84)</option>
+                        <option value="+263"> Zimbabwe (+263)</option>
+                    </select>
+                    <label for="telephone">Contact:</label>
+                    <input class="al" type="text" id="telephone"
+                        name="telephone"
+                        placeholder="Entrez votre contact" maxlength="15"
+                        required><br><br>
+                    <label for="email">email:</label>
+                    <input class="al" type="email" id="email"
+                        placeholder="Entrez votre email" name="email"
+                        required><br><br>
+
+                    <label for="BAC">Baccalauréat :</label>
+                    <select class="al" id="BAC" name="BAC" required>
+                        <option value disabled selected>Choisissez votre
+                            bac</option>
+                        <option value="serie C">BAC C</option>
+                        <option value="serie D">BAC D</option>
+                        <option value="serie F2">BAC F2</option>
+                        <option value="serie E">BAC E</option>
+                    </select><br><br>
+
+                    <label for="motdepasse">Mot de passe :</label>
+                    <input class="al" type="password" id="motdepasse"
+                        name="motdepasse" placeholder="Entrez un mot de passe"
+                        minlength="6" required><br><br>
+
+                    <label for="confirm_motdepasse">Confirmer le mot de passe
+                        :</label>
+                    <input class="al" type="password" id="confirm_motdepasse"
+                        name="confirm_motdepasse"
+                        placeholder="Confirmez votre mot de passe" minlength="6"
+                        required><br><br>
+
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </section>
+        
+        <script src="../js/Inscription.js"></script>
+    </body>
+</html>
